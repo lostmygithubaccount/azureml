@@ -85,7 +85,11 @@
             
               <p class="caption"><span class="caption-text">Overview</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#cli">CLI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#python">Python</a></li>
+</ul>
+</li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Concepts</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="concepts/workspace.html">Workspace</a></li>
 <li class="toctree-l2"><a class="reference internal" href="concepts/data.html">Data</a></li>
@@ -197,6 +201,13 @@
 <li><p>a unique id (GUID)</p></li>
 <li><p>a version</p></li>
 <li><p>tags</p></li>
+</ul>
+<p>Formally, an Asset in <cite>azureml</cite> is in Azure Resource Manager (ARM) Resource defined under the MachineLearningService. Assets can be created from:</p>
+<ul class="simple">
+<li><p>JSON ARM template</p></li>
+<li><p>YAML</p></li>
+<li><p>CLI</p></li>
+<li><p>Python</p></li>
 </ul>
 <div class="toctree-wrapper compound">
 </div>
