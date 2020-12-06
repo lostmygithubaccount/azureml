@@ -1,9 +1,9 @@
 Azure Machine Learning
 =======================
 
-*Accelerate the Machine Learning lifecycle.*
+*Accelerate the machine learning lifecycle.*
 
-This package provides interfaces for interacting with Azure Machine Learning.
+Azure Machine Learning, or `azureml`, is a cloud tool for training, deploying, and managing the lifecycle of machine learning (ML) models.
 
 .. toctree::
    :maxdepth: 2
@@ -40,3 +40,16 @@ This package provides interfaces for interacting with Azure Machine Learning.
    guides/cloud-development.rst
    guides/gha.rst
    guides/ado.rst
+
+.. toctree::
+  :maxdepth: 2
+  :hidden:
+  :caption: Distributed
+
+  distributed/overview.rst
+  distributed/pytorch.rst
+  distributed/tensorflow.rst
+  distributed/spark.rst
+  distributed/dask.rst
+  distributed/ray.rst
+   
