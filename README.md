@@ -1,7 +1,7 @@
 # Azure Machine Learning (AML)
 
-Azure Machine Learning interfaces.
+Azure Machine Learning.
 
 ## Reference
 
-- [link](https://github.com/lostmygithubaccount/azureml)
+Documentation: https://azureml.readthedocs.io/en/latest/
