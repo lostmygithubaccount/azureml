@@ -1,14 +1,14 @@
 Concepts
 ========
 
-In `azureml`, all concepts derive from a base Asset which has:
+In `azureml`, all concepts derive from a base asset which has:
 
 - a name
 - a unique id (GUID)
 - a version
 - tags
 
-Formally, an Asset in `azureml` is in Azure Resource Manager (ARM) Resource defined under the MachineLearningService. Assets can be created from:
+Formally, an asset in `azureml` is in Azure Resource Manager (ARM) Resource defined under the MachineLearningService. Assets can be created from:
 
 - JSON ARM template
 - YAML

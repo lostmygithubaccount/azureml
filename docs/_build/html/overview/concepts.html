@@ -117,7 +117,13 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../guides/local-development.html">Local Development</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../guides/cloud-development.html">Cloud Development</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../guides/scaling-workloads.html">Scaling Workloads</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/scaling-workloads.html">Scaling Workloads</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../guides/scaling-workloads.html#resources">Resources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guides/scaling-workloads.html#parallel-jobs">Parallel Jobs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guides/scaling-workloads.html#managed-endpoints">Managed Endpoints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guides/scaling-workloads.html#accelerating-computation">Accelerating Computation</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../guides/gha.html">GitHub Actions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../guides/ado.html">Azure DevOps</a></li>
 </ul>
@@ -195,14 +201,14 @@
             
   <div class="section" id="concepts">
 <h1>Concepts<a class="headerlink" href="#concepts" title="Permalink to this headline">¶</a></h1>
-<p>In <cite>azureml</cite>, all concepts derive from a base Asset which has:</p>
+<p>In <cite>azureml</cite>, all concepts derive from a base asset which has:</p>
 <ul class="simple">
 <li><p>a name</p></li>
 <li><p>a unique id (GUID)</p></li>
 <li><p>a version</p></li>
 <li><p>tags</p></li>
 </ul>
-<p>Formally, an Asset in <cite>azureml</cite> is in Azure Resource Manager (ARM) Resource defined under the MachineLearningService. Assets can be created from:</p>
+<p>Formally, an asset in <cite>azureml</cite> is in Azure Resource Manager (ARM) Resource defined under the MachineLearningService. Assets can be created from:</p>
 <ul class="simple">
 <li><p>JSON ARM template</p></li>
 <li><p>YAML</p></li>

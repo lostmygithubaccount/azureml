@@ -85,7 +85,11 @@
             
               <p class="caption"><span class="caption-text">Overview</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../overview/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/installation.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../overview/installation.html#cli">CLI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../overview/installation.html#python">Python</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../overview/concepts.html">Concepts</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../overview/concepts/workspace.html">Workspace</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../overview/concepts/data.html">Data</a></li>
@@ -113,7 +117,13 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="local-development.html">Local Development</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cloud-development.html">Cloud Development</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Scaling Workloads</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Scaling Workloads</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#resources">Resources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#parallel-jobs">Parallel Jobs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#managed-endpoints">Managed Endpoints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#accelerating-computation">Accelerating Computation</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="gha.html">GitHub Actions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ado.html">Azure DevOps</a></li>
 </ul>
@@ -191,7 +201,23 @@
             
   <div class="section" id="scaling-workloads">
 <h1>Scaling Workloads<a class="headerlink" href="#scaling-workloads" title="Permalink to this headline">¶</a></h1>
-<p>Scaling workloads…</p>
+<p>Scaling workloads is easy with <cite>azureml</cite>.</p>
+<div class="section" id="resources">
+<h2>Resources<a class="headerlink" href="#resources" title="Permalink to this headline">¶</a></h2>
+<p>An unlimited number of each resource is available per Workspace.</p>
+</div>
+<div class="section" id="parallel-jobs">
+<h2>Parallel Jobs<a class="headerlink" href="#parallel-jobs" title="Permalink to this headline">¶</a></h2>
+<p>Jobs are submitted to a queue which will run jobs in parallel if the required resources are available. With either cloud or self-hosted compute, thousands of jobs can be submitted and run concurrently.</p>
+</div>
+<div class="section" id="managed-endpoints">
+<h2>Managed Endpoints<a class="headerlink" href="#managed-endpoints" title="Permalink to this headline">¶</a></h2>
+<p>By default, endpoints are managed and automatically scaled.</p>
+</div>
+<div class="section" id="accelerating-computation">
+<h2>Accelerating Computation<a class="headerlink" href="#accelerating-computation" title="Permalink to this headline">¶</a></h2>
+<p>For accelerating computation, there are a number of options.</p>
+</div>
 </div>
 
 
