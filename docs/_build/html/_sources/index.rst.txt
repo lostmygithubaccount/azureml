@@ -38,15 +38,15 @@ Azure Machine Learning, or `azureml`, is a cloud tool for training, deploying, a
 
    guides/local-development.rst
    guides/cloud-development.rst
+   guides/distributed.rst
    guides/gha.rst
    guides/ado.rst
 
 .. toctree::
   :maxdepth: 2
   :hidden:
-  :caption: Distributed
+  :caption: Distributed Options
 
-  distributed/overview.rst
   distributed/pytorch.rst
   distributed/tensorflow.rst
   distributed/spark.rst
