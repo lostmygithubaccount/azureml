@@ -85,7 +85,11 @@
             
               <p class="caption"><span class="caption-text">Overview</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../overview/installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/installation.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../overview/installation.html#cli">CLI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../overview/installation.html#python">Python</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../overview/concepts.html">Concepts</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../overview/concepts/workspace.html">Workspace</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../overview/concepts/data.html">Data</a></li>
@@ -100,7 +104,10 @@
 </ul>
 <p class="caption"><span class="caption-text">Quickstart</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Setup</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Setup</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#azure">Azure</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="jobs.html">Running Jobs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="endpoints.html">Deploying Endpoints</a></li>
 </ul>
@@ -113,7 +120,13 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../guides/local-development.html">Local Development</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../guides/cloud-development.html">Cloud Development</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../guides/scaling-workloads.html">Scaling Workloads</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/scaling-workloads.html">Scaling Workloads</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../guides/scaling-workloads.html#resources">Resources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guides/scaling-workloads.html#parallel-jobs">Parallel Jobs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guides/scaling-workloads.html#managed-endpoints">Managed Endpoints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guides/scaling-workloads.html#accelerating-computation">Accelerating Computation</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../guides/gha.html">GitHub Actions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../guides/ado.html">Azure DevOps</a></li>
 </ul>
@@ -191,7 +204,21 @@
             
   <div class="section" id="setup">
 <h1>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h1>
-<p>To get started…</p>
+<div class="section" id="azure">
+<h2>Azure<a class="headerlink" href="#azure" title="Permalink to this headline">¶</a></h2>
+<p>If you don’t have an Azure subscription, create one for free.</p>
+<p>Authenticate with Azure:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">%</span> az login
+</pre></div>
+</div>
+<p>If you have access to multiple subscriptions, set a default:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">%</span> az account <span class="nb">set</span> -s <span class="nv">$SUBSCRIPTION_ID</span>
+</pre></div>
+</div>
+<p>Setup defaults:</p>
+<p>Create a workspace:</p>
+<p>You’re all set!</p>
+</div>
 </div>
 
 
