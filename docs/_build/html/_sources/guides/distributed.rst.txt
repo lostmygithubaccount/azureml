@@ -84,8 +84,8 @@ Reinforcement Learning
 
 **Recommended**
 
+- VopalWabbit via Spark
 - Ray RLib via Ray
-
 
 Hardware Acceleration
 ---------------------
