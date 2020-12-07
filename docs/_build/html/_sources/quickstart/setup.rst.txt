@@ -18,16 +18,19 @@ If you have access to multiple subscriptions, set a default:
 
     % az account set -s $SUBSCRIPTION_ID
 
+Azure Machine Learning
+----------------------
+
 Setup defaults:
 
-.. code-block: console
+.. code-block:: console
 
     % az config set defaults.group="azureml-rg"
     % az config set defaults.workspace="main"
 
 Create a workspace:
 
-.. code-block: console
+.. code-block:: console
 
     % az ml workspace create
 

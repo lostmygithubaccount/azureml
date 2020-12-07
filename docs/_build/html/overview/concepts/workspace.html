@@ -85,9 +85,16 @@
             
               <p class="caption"><span class="caption-text">Overview</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../installation.html#cli">CLI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation.html#python">Python</a></li>
+</ul>
+</li>
 <li class="toctree-l1 current"><a class="reference internal" href="../concepts.html">Concepts</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Workspace</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Workspace</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#parameters">Parameters</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="data.html">Data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="compute.html">Compute</a></li>
 <li class="toctree-l2"><a class="reference internal" href="environment.html">Environment</a></li>
@@ -100,7 +107,11 @@
 </ul>
 <p class="caption"><span class="caption-text">Quickstart</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../quickstart/setup.html">Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../quickstart/setup.html">Setup</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../quickstart/setup.html#azure">Azure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../quickstart/setup.html#azure-machine-learning">Azure Machine Learning</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../quickstart/jobs.html">Running Jobs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../quickstart/endpoints.html">Deploying Endpoints</a></li>
 </ul>
@@ -113,7 +124,13 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../guides/local-development.html">Local Development</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../guides/cloud-development.html">Cloud Development</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../guides/scaling-workloads.html">Scaling Workloads</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../guides/scaling-workloads.html">Scaling Workloads</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../guides/scaling-workloads.html#resources">Resources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../guides/scaling-workloads.html#parallel-jobs">Parallel Jobs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../guides/scaling-workloads.html#managed-endpoints">Managed Endpoints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../guides/scaling-workloads.html#accelerating-computation">Accelerating Computation</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../guides/gha.html">GitHub Actions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../guides/ado.html">Azure DevOps</a></li>
 </ul>
@@ -194,6 +211,43 @@
   <div class="section" id="workspace">
 <h1>Workspace<a class="headerlink" href="#workspace" title="Permalink to this headline">¶</a></h1>
 <p>A Workspace…</p>
+<div class="section" id="parameters">
+<h2>Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline">¶</a></h2>
+<p><strong>Required</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">name</span></code>, type = string</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">resource_group</span></code>, type = string</p></li>
+</ul>
+<p><strong>Optional</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">location</span></code>, type = enum,  options: see available regions, default = <code class="docutils literal notranslate"><span class="pre">&quot;eastus&quot;</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">create_resources</span></code>, type = bool, default = <code class="docutils literal notranslate"><span class="pre">true</span></code></p>
+<ul>
+<li><p>creates Azure resource group, virtual network, storage account, and key vault</p></li>
+<li><p>set to <code class="docutils literal notranslate"><span class="pre">false</span></code> to ensure an existing resource group and resources are used</p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">virtual_network</span></code>, type = string, default = <code class="docutils literal notranslate"><span class="pre">&quot;&quot;</span></code></p>
+<ul>
+<li><p>name of virtual network</p></li>
+<li><p>must be in same resource group</p></li>
+<li><p>if specified, will create all resources in this vnet by default</p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">storage_account</span></code>, type = string, default = <code class="docutils literal notranslate"><span class="pre">&quot;&quot;</span></code></p>
+<ul>
+<li><p>name of storage account</p></li>
+<li><p>must be in same resource group</p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">key_vault</span></code>, type = string, default = <code class="docutils literal notranslate"><span class="pre">&quot;&quot;</span></code></p>
+<ul>
+<li><p>name of the key vault</p></li>
+<li><p>must be in same resource group</p></li>
+</ul>
+</li>
+</ul>
+</div>
 </div>
 
 
