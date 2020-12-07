@@ -25,10 +25,12 @@ To run Dask, you need:
 
 - Python
 - pip:
+
   - dask
   - distributed
   - bokeh
   - ...
+  
 
 Recommended docker images include:
 
