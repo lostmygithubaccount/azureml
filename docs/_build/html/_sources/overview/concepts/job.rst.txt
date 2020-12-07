@@ -21,11 +21,28 @@ Parameters
 - ``environment``, type = string or azureml.Environment, default = ``""``
 - ``inputs``, type = string or azureml.Data or list[string] or list[azureml.Data], default = ``""``
 - ``outputs``, type = string or azureml.Data or list[string] or list[azureml.Data], default = ``""``
-- ``distribution``, type = enum, options: ``"horovod"``, ``"pytorch"``, ``"tensorflow"``, ``"spark"``, ``"dask"``, ``"ray"``
 - ``**distributed_params``, type = params
-
-  - see the distributed documentation for the corresponding type for distribution params
-
 - ``**sweep_params``, type = params
 
-  - ``sampling``, type = enum, options: ``"random"``, ``"bayesian"``, ``"grid"``, default = ``"random"``
+Distributed Parameters
+~~~~~~~~~~~~~~~~~~~~~~
+
+**Required**
+
+- ``framework``, type = enum, options: ``"horovod"``, ``"pytorch"``, ``"tensorflow"``, ``"spark"``, ``"dask"``, ``"ray"``
+
+**Optional**
+
+See the documentation for each distributed framework for additional parameters.
+
+Sweep Parameters
+~~~~~~~~~~~~~~~~
+
+**Required**
+
+- ``sampling``, type = enum, options: ``"random"``, ``"bayesian"``, ``"grid"``
+
+**Optional**
+
+- ``termination``
+- ``warm_start``

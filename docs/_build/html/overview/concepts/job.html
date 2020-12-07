@@ -130,8 +130,21 @@
 <li class="toctree-l2"><a class="reference internal" href="../../quickstart/setup.html#azure-machine-learning">Azure Machine Learning</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../quickstart/jobs.html">Running Jobs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../quickstart/jobs.html">Running Jobs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../quickstart/jobs.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../quickstart/jobs.html#hello-world">Hello World</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../quickstart/jobs.html#basic">Basic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../quickstart/jobs.html#advanced">Advanced</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../quickstart/jobs.html#workflows">Workflows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../quickstart/jobs.html#distributed">Distributed</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../quickstart/endpoints.html">Deploying Endpoints</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../quickstart/interactive.html">Interactive Sessions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../quickstart/interactive.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../quickstart/interactive.html#examples">Examples</a></li>
+</ul>
+</li>
 </ul>
 <p class="caption"><span class="caption-text">Interfaces</span></p>
 <ul>
@@ -142,24 +155,49 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../guides/local-development.html">Local Development</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../guides/cloud-development.html">Cloud Development</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../guides/scaling-workloads.html">Scaling Workloads</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../guides/scaling-workloads.html#resources">Resources</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../guides/scaling-workloads.html#parallel-jobs">Parallel Jobs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../guides/scaling-workloads.html#managed-endpoints">Managed Endpoints</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../guides/scaling-workloads.html#accelerating-computation">Accelerating Computation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../guides/distributed.html">Distributed Processing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../guides/distributed.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../guides/distributed.html#eda-visualization">EDA &amp; Visualization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../guides/distributed.html#data-engineering">Data Engineering</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../guides/distributed.html#classical-ml">Classical ML</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../guides/distributed.html#gradient-boosting-machine-gbm">Gradient Boosting Machine (GBM)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../guides/distributed.html#hyperparameter-tuning">Hyperparameter Tuning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../guides/distributed.html#deep-learning">Deep Learning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../guides/distributed.html#reinforcement-learning">Reinforcement Learning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../guides/distributed.html#hardware-acceleration">Hardware Acceleration</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../guides/gha.html">GitHub Actions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../guides/ado.html">Azure DevOps</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Distributed</span></p>
+<p class="caption"><span class="caption-text">Distributed Frameworks</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../distributed/horovod.html">Horovod</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../distributed/pytorch.html">PyTorch</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../distributed/tensorflow.html">Tensorflow</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../distributed/spark.html">Spark</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../distributed/dask.html">Dask</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../distributed/ray.html">Ray</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../distributed/spark.html">Spark</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../distributed/spark.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../distributed/spark.html#parameters">Parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../distributed/spark.html#requirements">Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../distributed/spark.html#initialization">Initialization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../distributed/spark.html#gpus">GPUs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../distributed/dask.html">Dask</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../distributed/dask.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../distributed/dask.html#parameters">Parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../distributed/dask.html#requirements">Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../distributed/dask.html#initialization">Initialization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../distributed/dask.html#gpus">GPUs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../distributed/ray.html">Ray</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../distributed/ray.html#parameters">Parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../distributed/ray.html#requirements">Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../distributed/ray.html#initialization">Initialization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../distributed/ray.html#gpus">GPUs</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -247,18 +285,30 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">environment</span></code>, type = string or azureml.Environment, default = <code class="docutils literal notranslate"><span class="pre">&quot;&quot;</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">inputs</span></code>, type = string or azureml.Data or list[string] or list[azureml.Data], default = <code class="docutils literal notranslate"><span class="pre">&quot;&quot;</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">outputs</span></code>, type = string or azureml.Data or list[string] or list[azureml.Data], default = <code class="docutils literal notranslate"><span class="pre">&quot;&quot;</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">distribution</span></code>, type = enum, options: <code class="docutils literal notranslate"><span class="pre">&quot;horovod&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;pytorch&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;tensorflow&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;spark&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;dask&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;ray&quot;</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">**distributed_params</span></code>, type = params</p>
-<ul>
-<li><p>see the distributed documentation for the corresponding type for distribution params</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">**distributed_params</span></code>, type = params</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">**sweep_params</span></code>, type = params</p></li>
 </ul>
-</li>
-<li><p><code class="docutils literal notranslate"><span class="pre">**sweep_params</span></code>, type = params</p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">sampling</span></code>, type = enum, options: <code class="docutils literal notranslate"><span class="pre">&quot;random&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;bayesian&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;grid&quot;</span></code>, default = <code class="docutils literal notranslate"><span class="pre">&quot;random&quot;</span></code></p></li>
+<div class="section" id="distributed-parameters">
+<h3>Distributed Parameters<a class="headerlink" href="#distributed-parameters" title="Permalink to this headline">¶</a></h3>
+<p><strong>Required</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">framework</span></code>, type = enum, options: <code class="docutils literal notranslate"><span class="pre">&quot;horovod&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;pytorch&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;tensorflow&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;spark&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;dask&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;ray&quot;</span></code></p></li>
 </ul>
-</li>
+<p><strong>Optional</strong></p>
+<p>See the documentation for each distributed framework for additional parameters.</p>
+</div>
+<div class="section" id="sweep-parameters">
+<h3>Sweep Parameters<a class="headerlink" href="#sweep-parameters" title="Permalink to this headline">¶</a></h3>
+<p><strong>Required</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">sampling</span></code>, type = enum, options: <code class="docutils literal notranslate"><span class="pre">&quot;random&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;bayesian&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;grid&quot;</span></code></p></li>
 </ul>
+<p><strong>Optional</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">termination</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">warm_start</span></code></p></li>
+</ul>
+</div>
 </div>
 </div>
 
