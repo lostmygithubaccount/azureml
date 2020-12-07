@@ -3,6 +3,8 @@ Azure Machine Learning
 
 *Accelerate the machine learning lifecycle.*
 
+.. warning:: this tool is in preview
+
 Azure Machine Learning, or `azureml`, is a cloud tool for training, deploying, and managing the lifecycle of machine learning (ML) models.
 
 .. toctree::
