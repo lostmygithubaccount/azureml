@@ -24,6 +24,8 @@ Parameters
 - ``**distributed_params``, type = params
 - ``**sweep_params``, type = params
 
+.. note:: job distribution and parameter sweeping are orthogonal
+
 Distributed Parameters
 ~~~~~~~~~~~~~~~~~~~~~~
 
