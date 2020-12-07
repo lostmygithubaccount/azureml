@@ -40,13 +40,6 @@ Classical ML
 - MLLib via Spark
 - dask-ml via Dask
 
-Automated ML
-------------
-
-**Recommended**
-
-- TPOT via Dask
-
 Gradient Boosting Machine (GBM)
 -------------------------------
 
