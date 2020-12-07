@@ -137,7 +137,11 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="jobs.html">Running Jobs</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="jobs.html#overview">Overview</a></li>
-<li class="toctree-l2"><a class="reference internal" href="jobs.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jobs.html#hello-world">Hello World</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jobs.html#basic">Basic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jobs.html#advanced">Advanced</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jobs.html#workflows">Workflows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jobs.html#distributed">Distributed</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="endpoints.html">Deploying Endpoints</a></li>
@@ -256,8 +260,8 @@
 </div>
 <p>This will start an interactive bash session locally with the current working directory as an input and <code class="docutils literal notranslate"><span class="pre">&quot;azureml/default&quot;</span></code> as the environment. This includes:</p>
 <ul class="simple">
+<li><p>latest stable versions of <code class="docutils literal notranslate"><span class="pre">az</span></code>, <code class="docutils literal notranslate"><span class="pre">git</span></code>, and <code class="docutils literal notranslate"><span class="pre">gh</span></code></p></li>
 <li><p>latest stable versions of all <cite>azureml</cite> interfaces</p></li>
-<li><p>latest stable versions of <code class="docutils literal notranslate"><span class="pre">az</span></code> and <code class="docutils literal notranslate"><span class="pre">gh</span></code></p></li>
 </ul>
 <p><strong>Advanced</strong></p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">%</span> az ml job create --interactive --target my-cluster --environment azureml/dask --inputs mydata,otherdata --outputs writedata

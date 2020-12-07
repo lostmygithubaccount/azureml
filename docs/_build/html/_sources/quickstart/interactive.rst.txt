@@ -25,8 +25,8 @@ Examples
 
 This will start an interactive bash session locally with the current working directory as an input and ``"azureml/default"`` as the environment. This includes:
 
+- latest stable versions of ``az``, ``git``, and ``gh``
 - latest stable versions of all `azureml` interfaces
-- latest stable versions of ``az`` and ``gh``
 
 **Advanced**
 
