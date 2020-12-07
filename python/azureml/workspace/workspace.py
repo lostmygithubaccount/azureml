@@ -17,7 +17,7 @@ class Workspace:
 
     >>> from azureml import Workspace
 
-    Next, create the ``Workpsace`` object.
+    Next, create the ``Workspace`` object.
 
     >>> ws = Workspace()
 
