@@ -130,7 +130,11 @@
 <li class="toctree-l2"><a class="reference internal" href="../quickstart/setup.html#azure-machine-learning">Azure Machine Learning</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../quickstart/interactive.html">Interactive Sessions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quickstart/interactive.html">Interactive Sessions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../quickstart/interactive.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../quickstart/interactive.html#examples">Examples</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../quickstart/jobs.html">Running Jobs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../quickstart/endpoints.html">Deploying Endpoints</a></li>
 </ul>
@@ -228,18 +232,7 @@
             
   <div class="section" id="concepts">
 <h1>Concepts<a class="headerlink" href="#concepts" title="Permalink to this headline">¶</a></h1>
-<p>In <cite>azureml</cite>, all concepts are represented as an asset.</p>
-<p><strong>Required</strong></p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">name</span></code>, type = string</p></li>
-</ul>
-<p><strong>Optional</strong></p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">id</span></code>, type = guid, defaults to auto-gen on creation</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">version</span></code>, type = string, default = <code class="docutils literal notranslate"><span class="pre">&quot;latest&quot;</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">description</span></code>, type = string, default = <code class="docutils literal notranslate"><span class="pre">&quot;&quot;</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">tags</span></code>, type = map, default = <code class="docutils literal notranslate"><span class="pre">{}</span></code></p></li>
-</ul>
+<p>In <cite>azureml</cite>, all concepts are represented as an asset. Assets are serializable via YAML and backed by Azure Resource Manager (ARM). They can be managed (created, updated, deleted) through the supported interfaces in addition to the Azure Portal and ML Studio.</p>
 <div class="toctree-wrapper compound">
 </div>
 </div>

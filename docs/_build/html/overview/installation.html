@@ -91,20 +91,50 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="concepts.html">Concepts</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="concepts/workspace.html">Workspace</a></li>
-<li class="toctree-l2"><a class="reference internal" href="concepts/data.html">Data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="concepts/compute.html">Compute</a></li>
-<li class="toctree-l2"><a class="reference internal" href="concepts/environment.html">Environment</a></li>
-<li class="toctree-l2"><a class="reference internal" href="concepts/model.html">Model</a></li>
-<li class="toctree-l2"><a class="reference internal" href="concepts/job.html">Job</a></li>
-<li class="toctree-l2"><a class="reference internal" href="concepts/endpoint.html">Endpoint</a></li>
+<li class="toctree-l2"><a class="reference internal" href="concepts/workspace.html">Workspace</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="concepts/workspace.html#parameters">Parameters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="concepts/data.html">Data</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="concepts/data.html#parameters">Parameters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="concepts/compute.html">Compute</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="concepts/compute.html#parameters">Parameters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="concepts/environment.html">Environment</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="concepts/environment.html#parameters">Parameters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="concepts/model.html">Model</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="concepts/model.html#parameters">Parameters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="concepts/job.html">Job</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="concepts/job.html#parameters">Parameters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="concepts/endpoint.html">Endpoint</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="concepts/endpoint.html#parameters">Parameters</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="architecture.html">Architecture</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Quickstart</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../quickstart/setup.html">Setup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quickstart/setup.html">Setup</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../quickstart/setup.html#azure">Azure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../quickstart/setup.html#azure-machine-learning">Azure Machine Learning</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../quickstart/interactive.html">Interactive Sessions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../quickstart/interactive.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../quickstart/interactive.html#examples">Examples</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../quickstart/jobs.html">Running Jobs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../quickstart/endpoints.html">Deploying Endpoints</a></li>
 </ul>
@@ -117,12 +147,19 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../guides/local-development.html">Local Development</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../guides/cloud-development.html">Cloud Development</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../guides/scaling-workloads.html">Scaling Workloads</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/scaling-workloads.html">Scaling Workloads</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../guides/scaling-workloads.html#resources">Resources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guides/scaling-workloads.html#parallel-jobs">Parallel Jobs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guides/scaling-workloads.html#managed-endpoints">Managed Endpoints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../guides/scaling-workloads.html#accelerating-computation">Accelerating Computation</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../guides/gha.html">GitHub Actions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../guides/ado.html">Azure DevOps</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Distributed</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../distributed/horovod.html">Horovod</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../distributed/pytorch.html">PyTorch</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../distributed/tensorflow.html">Tensorflow</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../distributed/spark.html">Spark</a></li>
@@ -195,7 +232,7 @@
             
   <div class="section" id="installation">
 <h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
-<p>You can install <em>azureml</em> on Linux, MacOS, and Windows for several interfaces.</p>
+<p>You can install <em>azureml</em> on Linux, MacOS, and Windows for several interfaces. The CLI is recommended for getting started.</p>
 <div class="section" id="cli">
 <h2>CLI<a class="headerlink" href="#cli" title="Permalink to this headline">¶</a></h2>
 <p>Curl:</p>

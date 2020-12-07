@@ -1,7 +1,7 @@
 Installation
 ============
 
-You can install *azureml* on Linux, MacOS, and Windows for several interfaces.
+You can install *azureml* on Linux, MacOS, and Windows for several interfaces. The CLI is recommended for getting started.
 
 CLI
 ---

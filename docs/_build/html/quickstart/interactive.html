@@ -130,8 +130,16 @@
 <li class="toctree-l2"><a class="reference internal" href="setup.html#azure-machine-learning">Azure Machine Learning</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Interactive Sessions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jobs.html">Running Jobs</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Interactive Sessions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#examples">Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="jobs.html">Running Jobs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="jobs.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jobs.html#examples">Examples</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="endpoints.html">Deploying Endpoints</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Interfaces</span></p>
@@ -228,7 +236,56 @@
             
   <div class="section" id="interactive-sessions">
 <h1>Interactive Sessions<a class="headerlink" href="#interactive-sessions" title="Permalink to this headline">¶</a></h1>
-<p>Interactive sessions…</p>
+<p>Interactive sessions are special jobs which can be started via CLI.</p>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>An interactive session is a job. All options used in running a job can be used. The benefits of an interactive session include:</p>
+<ul class="simple">
+<li><p>backed by docker, i.e. runs seamlessly locally or on the cloud</p></li>
+<li><p>azure compute for scaling up and hardware acceleration</p></li>
+<li><p>azure compute and <cite>azureml</cite> distribution for scaling out</p></li>
+<li><p>completely tracked and auditable</p></li>
+<li><p>mount cloud data for read/write</p></li>
+</ul>
+</div>
+<div class="section" id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<p><strong>Basic</strong></p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">%</span> az ml job create --interactive
+</pre></div>
+</div>
+<p>This will start an interactive bash session locally with the current working directory as an input and <code class="docutils literal notranslate"><span class="pre">&quot;azureml/default&quot;</span></code> as the environment. This includes:</p>
+<ul class="simple">
+<li><p>latest stable versions of all <cite>azureml</cite> interfaces</p></li>
+<li><p>latest stable versions of <code class="docutils literal notranslate"><span class="pre">az</span></code> and <code class="docutils literal notranslate"><span class="pre">gh</span></code></p></li>
+</ul>
+<p><strong>Advanced</strong></p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">%</span> az ml job create --interactive --target my-cluster --environment azureml/dask --inputs mydata,otherdata --outputs writedata
+</pre></div>
+</div>
+<p>This will start an interactive bash session locally connected to the remote target <code class="docutils literal notranslate"><span class="pre">my-cluster</span></code> with the <code class="docutils literal notranslate"><span class="pre">azureml/dask</span></code> environment installed. The <code class="docutils literal notranslate"><span class="pre">/mnts/azureml/inputs</span></code> directory will contain the <code class="docutils literal notranslate"><span class="pre">mydata</span></code> and <code class="docutils literal notranslate"><span class="pre">otherdata</span></code> directories. The <code class="docutils literal notranslate"><span class="pre">/mnts/azureml/outputs</span></code> directory will contain the <code class="docutils literal notranslate"><span class="pre">writedata</span></code> directory.</p>
+<p>At this point, it may be counterproductive to specify everything on the command line. Instead, we can create a job configuration file <code class="docutils literal notranslate"><span class="pre">job.yml</span></code>:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">my-interactive-job</span>
+<span class="nt">command</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">bash</span>
+<span class="nt">target</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">my-cluster</span>
+<span class="nt">environment</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">azureml/dask</span>
+<span class="nt">inputs</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">mydata</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">otherdata</span>
+<span class="nt">outputs</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">writedata</span>
+<span class="nt">distribution</span><span class="p">:</span>
+  <span class="nt">type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">dask</span>
+  <span class="nt">nodes</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">10</span>
+  <span class="nt">scheduler_class</span><span class="p">:</span> <span class="s">&quot;dask.distributed.Scheduler&quot;</span>
+  <span class="nt">worker_class</span><span class="p">:</span> <span class="s">&quot;dask.distributed.Worker&quot;</span>
+</pre></div>
+</div>
+<p>Now, start the interactive job, which will now run on 10 nodes:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">%</span> az ml job create --interactive -f job.yml
+</pre></div>
+</div>
+</div>
 </div>
 
 

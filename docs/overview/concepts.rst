@@ -1,18 +1,7 @@
 Concepts
 ========
 
-In `azureml`, all concepts are represented as an asset.
-
-**Required**
-
-- ``name``, type = string
-
-**Optional**
-
-- ``id``, type = guid, defaults to auto-gen on creation 
-- ``version``, type = string, default = ``"latest"``
-- ``description``, type = string, default = ``""``
-- ``tags``, type = map, default = ``{}``
+In `azureml`, all concepts are represented as an asset. Assets are serializable via YAML and backed by Azure Resource Manager (ARM). They can be managed (created, updated, deleted) through the supported interfaces in addition to the Azure Portal and ML Studio.
 
 .. toctree::
    :hidden:
