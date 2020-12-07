@@ -49,11 +49,11 @@ Write ``job.yml``:
 .. code-block:: yaml
 
     name: my-job
-    command: lightgbm --task train --objective multiclass --data inputs/iris.csv
+    command: lightgbm --task train --objective multiclass --data $inputs.iris
     target: my-cluster
     environment: azureml/lightgbm
     inputs:
-      - https://azuremlexamples.blob.core.windows.net/datasets/iris.csv
+      iris: https://azuremlexamples.blob.core.windows.net/datasets/iris.csv
 
 Now, run the job:
 
