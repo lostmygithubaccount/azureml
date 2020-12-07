@@ -16,7 +16,7 @@ Parameters
 - ``version``, type = string, default = ``"latest"``
 - ``description``, type = string, default = ``""``
 - ``tags``, type = map, default = ``{}``
-- ``docker_image``, type = string
-- ``docker_file``, type = string
-- ``conda_file``, type = string
-- ``pip_file``, type = string
+- ``docker_image``, type = string, default = ``""``
+- ``docker_file``, type = string, default = ``""``
+- ``conda_file``, type = string, default = ``""``
+- ``pip_file``, type = string, default = ``""``
