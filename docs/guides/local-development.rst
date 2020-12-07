@@ -10,6 +10,7 @@ Install:
   - `azureml` extension
   - python extension
 
+- `git`
 - `az`
 - `gh`
 - docker
