@@ -16,7 +16,7 @@ Parameters
 - ``version``, type = string, default = ``"latest"``
 - ``description``, type = string, default = ``""``
 - ``tags``, type = map, default = ``{}``
-- ``docker_image``, type = string, default = ``""``
+- ``docker_image``, type = string, default = ``"azureml/default"``
 - ``docker_file``, type = string, default = ``""``
 - ``conda_file``, type = string, default = ``""``
 - ``pip_file``, type = string, default = ``""``

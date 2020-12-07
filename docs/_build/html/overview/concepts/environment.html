@@ -130,9 +130,21 @@
 <li class="toctree-l2"><a class="reference internal" href="../../quickstart/setup.html#azure-machine-learning">Azure Machine Learning</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../quickstart/interactive.html">Interactive Sessions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../quickstart/jobs.html">Running Jobs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../quickstart/jobs.html">Running Jobs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../quickstart/jobs.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../quickstart/jobs.html#hello-world">Hello World</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../quickstart/jobs.html#basic">Basic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../quickstart/jobs.html#advanced">Advanced</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../quickstart/jobs.html#workflows">Workflows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../quickstart/jobs.html#distributed">Distributed</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../quickstart/endpoints.html">Deploying Endpoints</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../quickstart/interactive.html">Interactive Sessions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../quickstart/interactive.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../quickstart/interactive.html#examples">Examples</a></li>
+</ul>
+</li>
 </ul>
 <p class="caption"><span class="caption-text">Interfaces</span></p>
 <ul>
@@ -143,13 +155,6 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../guides/local-development.html">Local Development</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../guides/cloud-development.html">Cloud Development</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../guides/scaling-workloads.html">Scaling Workloads</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../guides/scaling-workloads.html#resources">Resources</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../guides/scaling-workloads.html#parallel-jobs">Parallel Jobs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../guides/scaling-workloads.html#managed-endpoints">Managed Endpoints</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../guides/scaling-workloads.html#accelerating-computation">Accelerating Computation</a></li>
-</ul>
-</li>
 <li class="toctree-l1"><a class="reference internal" href="../../guides/gha.html">GitHub Actions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../guides/ado.html">Azure DevOps</a></li>
 </ul>
@@ -243,7 +248,7 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">version</span></code>, type = string, default = <code class="docutils literal notranslate"><span class="pre">&quot;latest&quot;</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">description</span></code>, type = string, default = <code class="docutils literal notranslate"><span class="pre">&quot;&quot;</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">tags</span></code>, type = map, default = <code class="docutils literal notranslate"><span class="pre">{}</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">docker_image</span></code>, type = string, default = <code class="docutils literal notranslate"><span class="pre">&quot;&quot;</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">docker_image</span></code>, type = string, default = <code class="docutils literal notranslate"><span class="pre">&quot;azureml/default&quot;</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">docker_file</span></code>, type = string, default = <code class="docutils literal notranslate"><span class="pre">&quot;&quot;</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">conda_file</span></code>, type = string, default = <code class="docutils literal notranslate"><span class="pre">&quot;&quot;</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">pip_file</span></code>, type = string, default = <code class="docutils literal notranslate"><span class="pre">&quot;&quot;</span></code></p></li>
