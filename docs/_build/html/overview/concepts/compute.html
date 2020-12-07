@@ -91,15 +91,32 @@
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="../concepts.html">Concepts</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../concepts.html#parameters">Parameters</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="../concepts.html#management">Management</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="workspace.html">Workspace</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data.html">Data</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Compute</a></li>
-<li class="toctree-l3"><a class="reference internal" href="environment.html">Environment</a></li>
-<li class="toctree-l3"><a class="reference internal" href="model.html">Model</a></li>
-<li class="toctree-l3"><a class="reference internal" href="job.html">Job</a></li>
-<li class="toctree-l3"><a class="reference internal" href="endpoint.html">Endpoint</a></li>
+<li class="toctree-l2"><a class="reference internal" href="workspace.html">Workspace</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="workspace.html#parameters">Parameters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="data.html">Data</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="data.html#parameters">Parameters</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Compute</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#parameters">Parameters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="environment.html">Environment</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="environment.html#parameters">Parameters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="model.html">Model</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="model.html#parameters">Parameters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="job.html">Job</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="job.html#parameters">Parameters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint.html">Endpoint</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="endpoint.html#parameters">Parameters</a></li>
 </ul>
 </li>
 </ul>
@@ -221,6 +238,10 @@
 </ul>
 <p><strong>Optional</strong></p>
 <ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">id</span></code>, type = guid, defaults to auto-gen on creation</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">version</span></code>, type = string, default = <code class="docutils literal notranslate"><span class="pre">&quot;latest&quot;</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">description</span></code>, type = string, default = <code class="docutils literal notranslate"><span class="pre">&quot;&quot;</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">tags</span></code>, type = map, default = <code class="docutils literal notranslate"><span class="pre">{}</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">location</span></code>, type = enum,  options: see available regions, defaults to workspace location</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">vm_size</span></code>, type = enum, options: see available options, defaults = <code class="docutils literal notranslate"><span class="pre">&quot;Standard_DS3_v2&quot;</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">virtual_network</span></code>, type = string, defaults to workspace virtual network</p></li>

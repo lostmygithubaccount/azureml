@@ -13,6 +13,10 @@ Parameters
 
 **Optional**
 
+- ``id``, type = guid, defaults to auto-gen on creation 
+- ``version``, type = string, default = ``"latest"``
+- ``description``, type = string, default = ``""``
+- ``tags``, type = map, default = ``{}``
 - ``target``, type = string or azureml.Compute, default = ``"local"``
 - ``environment``, type = string or azureml.Environment, default = ``""``
 - ``inputs``, type = string or azureml.Data or list[string] or list[azureml.Data], default = ``""``

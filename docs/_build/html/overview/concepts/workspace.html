@@ -95,12 +95,30 @@
 <li class="toctree-l3"><a class="reference internal" href="#parameters">Parameters</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="data.html">Data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="compute.html">Compute</a></li>
-<li class="toctree-l2"><a class="reference internal" href="environment.html">Environment</a></li>
-<li class="toctree-l2"><a class="reference internal" href="model.html">Model</a></li>
-<li class="toctree-l2"><a class="reference internal" href="job.html">Job</a></li>
-<li class="toctree-l2"><a class="reference internal" href="endpoint.html">Endpoint</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data.html">Data</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="data.html#parameters">Parameters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="compute.html">Compute</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="compute.html#parameters">Parameters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="environment.html">Environment</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="environment.html#parameters">Parameters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="model.html">Model</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="model.html#parameters">Parameters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="job.html">Job</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="job.html#parameters">Parameters</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="endpoint.html">Endpoint</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="endpoint.html#parameters">Parameters</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../architecture.html">Architecture</a></li>
@@ -136,6 +154,7 @@
 </ul>
 <p class="caption"><span class="caption-text">Distributed</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../distributed/horovod.html">Horovod</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../distributed/pytorch.html">PyTorch</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../distributed/tensorflow.html">Tensorflow</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../distributed/spark.html">Spark</a></li>
@@ -216,31 +235,35 @@
 <p><strong>Required</strong></p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">name</span></code>, type = string</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">resource_group</span></code>, type = string</p></li>
 </ul>
 <p><strong>Optional</strong></p>
 <ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">id</span></code>, type = guid, defaults to auto-gen on creation</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">version</span></code>, type = string, default = <code class="docutils literal notranslate"><span class="pre">&quot;latest&quot;</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">description</span></code>, type = string, default = <code class="docutils literal notranslate"><span class="pre">&quot;&quot;</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">tags</span></code>, type = map, default = <code class="docutils literal notranslate"><span class="pre">{}</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">location</span></code>, type = enum,  options: see available regions, default = <code class="docutils literal notranslate"><span class="pre">&quot;eastus&quot;</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">resource_group</span></code>, type = string, default = <code class="docutils literal notranslate"><span class="pre">&quot;azureml-rg&quot;</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">create_resources</span></code>, type = bool, default = <code class="docutils literal notranslate"><span class="pre">true</span></code></p>
 <ul>
 <li><p>creates Azure resource group, virtual network, storage account, and key vault</p></li>
 <li><p>set to <code class="docutils literal notranslate"><span class="pre">false</span></code> to ensure an existing resource group and resources are used</p></li>
 </ul>
 </li>
-<li><p><code class="docutils literal notranslate"><span class="pre">virtual_network</span></code>, type = string, default = <code class="docutils literal notranslate"><span class="pre">&quot;&quot;</span></code></p>
+<li><p><code class="docutils literal notranslate"><span class="pre">virtual_network</span></code>, type = string, default = <code class="docutils literal notranslate"><span class="pre">&quot;azureml-vnet&quot;</span></code></p>
 <ul>
 <li><p>name of virtual network</p></li>
 <li><p>must be in same resource group</p></li>
 <li><p>if specified, will create all resources in this vnet by default</p></li>
 </ul>
 </li>
-<li><p><code class="docutils literal notranslate"><span class="pre">storage_account</span></code>, type = string, default = <code class="docutils literal notranslate"><span class="pre">&quot;&quot;</span></code></p>
+<li><p><code class="docutils literal notranslate"><span class="pre">storage_account</span></code>, type = string, default = <code class="docutils literal notranslate"><span class="pre">&quot;azureml-sa&quot;</span></code></p>
 <ul>
 <li><p>name of storage account</p></li>
 <li><p>must be in same resource group</p></li>
 </ul>
 </li>
-<li><p><code class="docutils literal notranslate"><span class="pre">key_vault</span></code>, type = string, default = <code class="docutils literal notranslate"><span class="pre">&quot;&quot;</span></code></p>
+<li><p><code class="docutils literal notranslate"><span class="pre">key_vault</span></code>, type = string, default = <code class="docutils literal notranslate"><span class="pre">&quot;azureml-kv&quot;</span></code></p>
 <ul>
 <li><p>name of the key vault</p></li>
 <li><p>must be in same resource group</p></li>
