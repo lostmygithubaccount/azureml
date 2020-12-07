@@ -137,7 +137,11 @@
 </li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Running Jobs</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#hello-world">Hello World</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#basic">Basic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#advanced">Advanced</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#workflows">Workflows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#distributed">Distributed</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="endpoints.html">Deploying Endpoints</a></li>
@@ -241,9 +245,8 @@
 <h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
 <p>A job is typically represented as a YAML file.</p>
 </div>
-<div class="section" id="examples">
-<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
-<p><strong>Hello World</strong></p>
+<div class="section" id="hello-world">
+<h2>Hello World<a class="headerlink" href="#hello-world" title="Permalink to this headline">¶</a></h2>
 <p>Write <code class="docutils literal notranslate"><span class="pre">job.yml</span></code>:</p>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">my-job</span>
 <span class="nt">command</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">python -c &quot;print(&#39;hello world!&#39;)&quot;</span>
@@ -263,7 +266,9 @@
 <span class="nt">target</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">my-cluster</span>
 </pre></div>
 </div>
-<p><strong>Basic</strong></p>
+</div>
+<div class="section" id="basic">
+<h2>Basic<a class="headerlink" href="#basic" title="Permalink to this headline">¶</a></h2>
 <p>Typically, you want to use an environment with certain data mounted - and <em>azureml</em> makes this trivial on local or remote compute.</p>
 <p>Write <code class="docutils literal notranslate"><span class="pre">job.yml</span></code>:</p>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">my-job</span>
@@ -286,11 +291,17 @@
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">%</span> as ml job view --logs --tail <span class="m">10</span>
 </pre></div>
 </div>
-<p><strong>Advanced</strong></p>
+</div>
+<div class="section" id="advanced">
+<h2>Advanced<a class="headerlink" href="#advanced" title="Permalink to this headline">¶</a></h2>
 <p>Advanced stuff.</p>
-<p><strong>Workflows</strong></p>
+</div>
+<div class="section" id="workflows">
+<h2>Workflows<a class="headerlink" href="#workflows" title="Permalink to this headline">¶</a></h2>
 <p>A workflow is simply a job with multiple steps.</p>
-<p><strong>Distributed</strong></p>
+</div>
+<div class="section" id="distributed">
+<h2>Distributed<a class="headerlink" href="#distributed" title="Permalink to this headline">¶</a></h2>
 <p>See the distribution section.</p>
 </div>
 </div>

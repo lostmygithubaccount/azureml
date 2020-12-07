@@ -8,10 +8,8 @@ Overview
 
 A job is typically represented as a YAML file.
 
-Examples
---------
-
-**Hello World**
+Hello World
+-----------
 
 Write ``job.yml``:
 
@@ -40,7 +38,9 @@ Or alternatively, edit ``job.yml``:
     command: python -c "print('hello world, from the cloud!')"
     target: my-cluster
 
-**Basic**
+Basic
+-----
+
 
 Typically, you want to use an environment with certain data mounted - and *azureml* makes this trivial on local or remote compute.
 
@@ -73,14 +73,17 @@ To stream the logs:
 
     % as ml job view --logs --tail 10
 
-**Advanced**
+Advanced
+--------
 
 Advanced stuff.
 
-**Workflows**
+Workflows
+---------
 
 A workflow is simply a job with multiple steps.
 
-**Distributed**
+Distributed
+-----------
 
 See the distribution section.
