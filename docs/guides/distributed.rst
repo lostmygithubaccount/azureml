@@ -60,7 +60,7 @@ Hyperparameter Tuning
 
 **Recommended**
 
-- Ray Tune via Ray
+- Tune via Ray
 - Optuna via Dask
 
 Deep Learning
@@ -85,7 +85,7 @@ Reinforcement Learning
 **Recommended**
 
 - VopalWabbit via Spark
-- Ray RLib via Ray
+- RLlib via Ray
 
 Hardware Acceleration
 ---------------------
