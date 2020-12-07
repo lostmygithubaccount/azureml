@@ -1,4 +1,0 @@
-Deploying Endpoints
-===================
-
-Deploying endpoints...

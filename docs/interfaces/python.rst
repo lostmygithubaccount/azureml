@@ -6,7 +6,7 @@ Python...
 Workspace
 ---------
 
-.. module:: azureml.workspace
+.. currentmodule:: azureml.workspace
 
 .. autoclass:: Workspace
     :members:
