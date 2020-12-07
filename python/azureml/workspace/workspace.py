@@ -5,8 +5,10 @@ class Workspace:
 
     Parameters
     ----------
-    name: str (required)
+    name: str
         name for reference
+    location: str
+        Azure location
 
     Examples
     --------
