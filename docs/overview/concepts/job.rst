@@ -13,9 +13,10 @@ Parameters
 
 **Optional**
 
-- ``environment``, type = string or azureml.Environment, default = ``""``
-- ``datasets``, type = string or azureml.Data or list[string] or list[azureml.Data], default = ``""``
 - ``target``, type = string or azureml.Compute, default = ``"local"``
+- ``environment``, type = string or azureml.Environment, default = ``""``
+- ``inputs``, type = string or azureml.Data or list[string] or list[azureml.Data], default = ``""``
+- ``outputs``, type = string or azureml.Data or list[string] or list[azureml.Data], default = ``""``
 - ``distribution``, type = enum, options: ``"horovod"``, ``"pytorch"``, ``"tensorflow"``, ``"spark"``, ``"dask"``, ``"ray"``
 - ``**distributed_params``, type = params
 

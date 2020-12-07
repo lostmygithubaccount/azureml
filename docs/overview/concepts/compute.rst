@@ -16,8 +16,8 @@ Parameters
 - ``vm_size``, type = enum, options: see available options, defaults = ``"Standard_DS3_v2"``
 - ``virtual_network``, type = string, defaults to workspace virtual network
 - ``min_nodes``, type = int, default = ``0``
-- ``max_nodes``, type = int, default = ``100``
-- ``idle_timeout``, type = int, default = ``60``
+- ``max_nodes``, type = int, default = ``1``
+- ``idle_timeout``, type = int, default = ``30``
 
   - idle timeout for node de-allocation in seconds
 

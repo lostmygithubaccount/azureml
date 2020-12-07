@@ -91,32 +91,16 @@
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Concepts</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="concepts/workspace.html">Workspace</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="concepts/workspace.html#parameters">Parameters</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="concepts/data.html">Data</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="concepts/data.html#parameters">Parameters</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="concepts/compute.html">Compute</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="concepts/compute.html#parameters">Parameters</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="concepts/environment.html">Environment</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="concepts/environment.html#parameters">Parameters</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="concepts/model.html">Model</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="concepts/model.html#parameters">Parameters</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="concepts/job.html">Job</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="concepts/job.html#parameters">Parameters</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="concepts/endpoint.html">Endpoint</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="concepts/endpoint.html#parameters">Parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#parameters">Parameters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#management">Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#assets">Assets</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="concepts/workspace.html">Workspace</a></li>
+<li class="toctree-l3"><a class="reference internal" href="concepts/data.html">Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="concepts/compute.html">Compute</a></li>
+<li class="toctree-l3"><a class="reference internal" href="concepts/environment.html">Environment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="concepts/model.html">Model</a></li>
+<li class="toctree-l3"><a class="reference internal" href="concepts/job.html">Job</a></li>
+<li class="toctree-l3"><a class="reference internal" href="concepts/endpoint.html">Endpoint</a></li>
 </ul>
 </li>
 </ul>
@@ -227,22 +211,37 @@
             
   <div class="section" id="concepts">
 <h1>Concepts<a class="headerlink" href="#concepts" title="Permalink to this headline">¶</a></h1>
-<p>In <cite>azureml</cite>, all concepts derive from a base asset which has:</p>
+<p>In <cite>azureml</cite>, all concepts are represented as an asset.</p>
+<div class="section" id="parameters">
+<h2>Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline">¶</a></h2>
+<p><strong>Required</strong></p>
 <ul class="simple">
-<li><p>a name</p></li>
-<li><p>a unique id (GUID)</p></li>
-<li><p>a version</p></li>
-<li><p>a description</p></li>
-<li><p>tags</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">name</span></code>, type = string</p></li>
 </ul>
-<p>Formally, an asset in <cite>azureml</cite> is in Azure Resource Manager (ARM) Resource defined under the MachineLearningService. Assets can be created from:</p>
+<p><strong>Optional</strong></p>
 <ul class="simple">
-<li><p>JSON ARM template</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">id</span></code>, type = guid, defaults to auto-gen on creation</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">version</span></code>, type = string, default = <code class="docutils literal notranslate"><span class="pre">&quot;latest&quot;</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">description</span></code>, type = string, default = <code class="docutils literal notranslate"><span class="pre">&quot;&quot;</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">tags</span></code>, type = map, default = <code class="docutils literal notranslate"><span class="pre">{}</span></code></p></li>
+</ul>
+</div>
+<div class="section" id="management">
+<h2>Management<a class="headerlink" href="#management" title="Permalink to this headline">¶</a></h2>
+<p>An asset in <cite>azureml</cite> is an Azure Resource Manager (ARM) Resource defined under the MachineLearningService scope. Assets can be managed from:</p>
+<ul class="simple">
+<li><p>Azure Portal</p></li>
+<li><p>Azure Machine Learning Studio</p></li>
+<li><p>ARM template (JSON)</p></li>
 <li><p>YAML</p></li>
 <li><p>CLI</p></li>
 <li><p>Python</p></li>
 </ul>
+</div>
+<div class="section" id="assets">
+<h2>Assets<a class="headerlink" href="#assets" title="Permalink to this headline">¶</a></h2>
 <div class="toctree-wrapper compound">
+</div>
 </div>
 </div>
 

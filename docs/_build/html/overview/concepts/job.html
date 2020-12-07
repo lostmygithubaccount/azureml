@@ -239,9 +239,10 @@
 </ul>
 <p><strong>Optional</strong></p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">environment</span></code>, type = string or azureml.Environment, default = <code class="docutils literal notranslate"><span class="pre">&quot;&quot;</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">datasets</span></code>, type = string or azureml.Data or list[string] or list[azureml.Data], default = <code class="docutils literal notranslate"><span class="pre">&quot;&quot;</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">target</span></code>, type = string or azureml.Compute, default = <code class="docutils literal notranslate"><span class="pre">&quot;local&quot;</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">environment</span></code>, type = string or azureml.Environment, default = <code class="docutils literal notranslate"><span class="pre">&quot;&quot;</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">inputs</span></code>, type = string or azureml.Data or list[string] or list[azureml.Data], default = <code class="docutils literal notranslate"><span class="pre">&quot;&quot;</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">outputs</span></code>, type = string or azureml.Data or list[string] or list[azureml.Data], default = <code class="docutils literal notranslate"><span class="pre">&quot;&quot;</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">distribution</span></code>, type = enum, options: <code class="docutils literal notranslate"><span class="pre">&quot;horovod&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;pytorch&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;tensorflow&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;spark&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;dask&quot;</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;ray&quot;</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">**distributed_params</span></code>, type = params</p>
 <ul>

@@ -1,24 +1,40 @@
 Concepts
 ========
 
-In `azureml`, all concepts derive from a base asset which has:
+In `azureml`, all concepts are represented as an asset.
 
-- a name
-- a unique id (GUID)
-- a version
-- a description
-- tags
+Parameters
+----------
 
-Formally, an asset in `azureml` is in Azure Resource Manager (ARM) Resource defined under the MachineLearningService. Assets can be created from:
+**Required**
 
-- JSON ARM template
+- ``name``, type = string
+
+**Optional**
+
+- ``id``, type = guid, defaults to auto-gen on creation 
+- ``version``, type = string, default = ``"latest"``
+- ``description``, type = string, default = ``""``
+- ``tags``, type = map, default = ``{}``
+
+Management
+----------
+
+An asset in `azureml` is an Azure Resource Manager (ARM) Resource defined under the MachineLearningService scope. Assets can be managed from:
+
+- Azure Portal
+- Azure Machine Learning Studio
+- ARM template (JSON)
 - YAML
 - CLI
 - Python
 
+Assets
+------
+
 .. toctree::
-   :maxdepth: 2
    :hidden:
+   :caption: Assets
 
    concepts/workspace.rst
    concepts/data.rst
